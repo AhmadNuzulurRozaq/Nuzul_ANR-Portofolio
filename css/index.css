@@ -129,24 +129,16 @@ header #navbarMenu ul li button:hover {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        width: 100%;
         justify-content: flex-start;
         background-color: #000a17;
+        margin-left: 20px;
     }
 
     header #navbarMenu ul{
-        
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    header #navbarMenu ul li{
-        width: 90%;
-    }
-
-    header #navbarMenu ul li button{
-        width: 100%;
+        justify-content: center;
     }
 
     header #navbarMenu.active{
