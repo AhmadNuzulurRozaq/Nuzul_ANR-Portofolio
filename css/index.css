@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000a17;
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+header {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo h2 {
+    font-size: 25px;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+
+}
+
+header #humbergerMenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+header #humbergerMenu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header #navbarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+header #navbarMenu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+header #navbarMenu a {
+    background-color: #000a17;
+    transition: 0.3s;
+}
+
+header #navbarMenu a:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+header #navbarMenu a img {
+    width: 48.4px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header #navbarMenu a img:hover {
+    filter: brightness(0);
+
+}
+
+header #navbarMenu ul li button {
+    background-color: #000a17;
+    border: none;
+    color: white;
+    font-family: 'Jetbrains Mono', monospace;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+header #navbarMenu ul li button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+
+    header{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo{
+        margin-left: 10px;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .logo h2 {
+        font-size: 20px;
+    }
+
+    header #humbergerMenu {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    header #navbarMenu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        justify-content: flex-start;
+        background-color: #000a17;
+    }
+
+    header #navbarMenu ul{
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header #navbarMenu ul li{
+        width: 90%;
+    }
+
+    header #navbarMenu ul li button{
+        width: 100%;
+    }
+
+    header #navbarMenu.active{
+        display: flex;
+    }
+}
