@@ -1,147 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
+main{
     background-color: #000a17;
-    font-family: 'Jetbrains Mono', monospace;
 }
 
-header {
-    margin-top: 20px;
+main .welcomeScreen{
     color: white;
     display: flex;
-    justify-content: space-around;
-}
-
-header .logo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 10, 23, 0.8), rgba(0, 10, 23, 0.8)), url('../img/bg.jpg');
+    background-size: cover;
 }
 
-header .logo h2 {
-    font-size: 25px;
-}
-
-header .logo img {
-    width: 100px;
-    height: 100px;
-
-}
-
-header #humbergerMenu {
-    display: none;
+main .welcomeScreen .leftContent{
+    display: flex;
     flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
+    gap: 0px;
+    margin-left: 130px;
 }
 
-header #humbergerMenu span {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 5px;
+main .welcomeScreen .leftContent h3{
+    font-size: 35px;
+    font-weight: 300;
 }
 
-header #navbarMenu {
+main .welcomeScreen .leftContent h1{
+    font-size: 40px;
+}
+
+main .welcomeScreen .leftContent .sosmedIcon1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
-header #navbarMenu ul {
-    display: flex;
-    list-style-type: none;
-    gap: 10px;
-}
-
-header #navbarMenu a {
-    background-color: #000a17;
+main .welcomeScreen .leftContent .sosmedIcon1 a{
+    padding: 5px;
     transition: 0.3s;
-}
-
-header #navbarMenu a:hover {
-    background-color: white;
     border-radius: 10px;
 }
 
-header #navbarMenu a img {
-    width: 48.4px;
+main .welcomeScreen .leftContent .sosmedIcon1 a img{
+    width: 45px;
     cursor: pointer;
-    padding: 5px;
+    transition: 0.1s;
 }
 
-header #navbarMenu a img:hover {
-    filter: brightness(0);
-
+main .welcomeScreen .leftContent .sosmedIcon1 a img:hover{
+    transform: scale(1.5);
 }
 
-header #navbarMenu ul li button {
-    background-color: #000a17;
-    border: none;
+main .welcomeScreen .logoANR{
+   margin-right: 90px;
+}
+
+main .welcomeScreen .logoANR img{
+    width: 450px;
+}
+
+main .contentProject{
     color: white;
-    font-family: 'Jetbrains Mono', monospace;
-    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main .contentProject .cardProject{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .contentProject .titleProject h1{
+    font-size: 50px;
+}
+
+main .contentProject .cardProject .card{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 300px;
+    overflow: hidden;
     cursor: pointer;
+    transition: 0.1s;
+}
+
+main .contentProject .cardProject .card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 30px white;
+}
+
+
+main .contentProject .cardProject .card img{
+    width: 100%;
+}
+
+main .contentProject .linkProjectButton a {
+    text-decoration: none;
+    color: white;
     padding: 10px;
-    transition: 0.3s;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.1s;
+    background-color: #747474;
 }
 
-header #navbarMenu ul li button:hover {
-    background-color: rgb(255, 255, 255);
+main .contentProject .linkProjectButton a:hover{
+    background-color: white;
     color: black;
-    border-radius: 4px;
-}
-
-@media (max-width: 768px) {
-
-
-    header{
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .logo{
-        margin-left: 10px;
-    }
-
-    header .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    header .logo h2 {
-        font-size: 20px;
-    }
-
-    header #humbergerMenu {
-        display: flex;
-        margin-right: 30px;
-    }
-
-    header #navbarMenu{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        justify-content: flex-start;
-        background-color: #000a17;
-        margin-left: 20px;
-    }
-
-    header #navbarMenu ul{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-    }
-
-    header #navbarMenu.active{
-        display: flex;
-    }
 }

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000a17;
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 10, 23, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 100px;
+}
+
+header .logo h2 {
+    font-size: 25px;
+}
+
+header .logo img {
+    width: 100px;
+    height: 100px;
+
+}
+
+header #humbergerMenu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+header #humbergerMenu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header #navbarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-right: 100px;
+}
+
+header #navbarMenu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+header #navbarMenu a {
+    
+    transition: 0.3s;
+}
+
+header #navbarMenu a:hover {
+    border-radius: 10px;
+}
+
+header #navbarMenu a img {
+    width: 48.4px;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.1s;
+}
+
+header #navbarMenu a img:hover {
+    transform: scale(1.3);
+
+}
+
+header #navbarMenu ul li a {
+    background-color: none;
+    border: none;
+    color: white;
+    font-family: 'Jetbrains Mono', monospace;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+header #navbarMenu ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+
+    header{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo{
+        margin-left: 10px;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .logo h2 {
+        font-size: 20px;
+    }
+
+    header #humbergerMenu {
+        display: flex;
+        margin-right: 30px;
+    }
+
+    header #navbarMenu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        justify-content: flex-start;
+        background-color: #000a17;
+        margin-left: 20px;
+    }
+
+    header #navbarMenu ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header #navbarMenu.active{
+        display: flex;
+    }
+}
