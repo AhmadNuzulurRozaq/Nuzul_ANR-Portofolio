@@ -1,0 +1,83 @@
+main {
+    height: 100vh;
+    color: white;
+    margin-top: 100px;
+}
+
+main .myProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .myProfile .containerTitle1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 100%; */
+    /* max-width: 800px; */
+}
+
+
+main .myProfile .containerTitle1 .profileSquare {
+    background-color: #001a3b;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* width: 100%;
+    box-sizing: border-box; */
+}
+
+main .myProfile .containerTitle1 .profileSquare .personalIdentity table tr td ul {
+    list-style-type: square;
+}
+
+main .myProfile .containerTitle1 .profileSquare .myPhoto img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+main .mySkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* max-width: 800px; */
+}
+
+main .mySkills .skillsSquare {
+    display: flex;
+    flex-direction: column;
+    background-color: #001a3b;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main .mySkills .containerTitle2 .skillsSquare .logo {
+    display: flex;
+    gap: 50px;
+}
+
+main .mySkills .containerTitle2 .skillsSquare .logo .logoCard{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .mySkills .containerTitle2 .skillsSquare .logo .logoCard img {
+    width: 80px;
+    height: auto;
+}
+
+main .mySkills .containerTitle2 .skillsSquare .logo .logoCard span {
+    font-size: 16px;
+    font-weight: bold;
+}

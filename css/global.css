@@ -67,7 +67,7 @@ header #navbarMenu ul {
 }
 
 header #navbarMenu a {
-    
+
     transition: 0.3s;
 }
 
@@ -105,17 +105,141 @@ header #navbarMenu ul li a:hover {
     border-radius: 4px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: 50px 100px;
+}
+
+footer .leftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 25px;
+}
+
+footer .leftContent .footerLogo {
+    display: flex;
+    align-items: center;
+}
+
+footer .leftContent .footerLogo img {
+    width: 100px;
+}
+
+footer .footerText {
+    margin-left: 18px;
+    width: 400px;
+}
+
+footer .leftContent .sosmedIcon2 {
+    display: flex;
+    gap: 30px;
+    margin-left: 18px;
+}
+
+footer .leftContent .sosmedIcon2 img {
+    width: 30px;
+    transition: 0.1s;
+}
+
+footer .leftContent .sosmedIcon2 img:hover{
+    transform: scale(1.3);
+}
+
+footer .leftContent .moreButton {
+    border: 1px solid white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 3px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 18px;
+}
+
+footer .leftContent .moreButton:hover {
+    background-color: white;
+}
+
+footer .leftContent .moreButton a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .leftContent .moreButton:hover a {
+    color: black;
+}
+
+footer .rightContent{
+    display: flex;
+    gap: 90px;
+}
+
+footer .rightContent .linkFooter1 h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+footer .rightContent .linkFooter1 ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    padding-left: 1px;
+}
+
+footer .rightContent .linkFooter1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer .rightContent .linkFooter1 ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .rightContent .linkFooter2 h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+footer .rightContent .linkFooter2 ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    padding-left: 1px;
+    margin-bottom: 50px;
+}
+
+footer .rightContent .linkFooter2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer .rightContent .linkFooter2 ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .rightContent .linkFooter2 span{
+    color: #656565;
+}
+
 @media (max-width: 768px) {
 
 
-    header{
+    header {
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    header .logo{
+    header .logo {
         margin-left: 10px;
     }
 
@@ -133,7 +257,7 @@ header #navbarMenu ul li a:hover {
         margin-right: 30px;
     }
 
-    header #navbarMenu{
+    header #navbarMenu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -143,14 +267,14 @@ header #navbarMenu ul li a:hover {
         margin-left: 20px;
     }
 
-    header #navbarMenu ul{
+    header #navbarMenu ul {
         display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
     }
 
-    header #navbarMenu.active{
+    header #navbarMenu.active {
         display: flex;
     }
 }
