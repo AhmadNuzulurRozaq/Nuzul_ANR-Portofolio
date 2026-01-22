@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main .container1{
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .container1 .leftContent{
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        main .container1 .leftContent .cardContent{
+            background-color: chocolate;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .container2{
+            background-color: rgb(130, 100, 63);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        main .container2 .leftContent{
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        main .container2 .leftContent .cardContent{
+            background-color: chocolate;
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PERCOBAAN WIDTH</h1>
+    <main>
+        <section class="container1">
+            <div class="leftContent">
+                <div class="title">
+                    <h1>HALO BAGIAN PERTAMA</h1>
+                </div>
+                <div class="cardContent">
+                    <h3>HALO TEST</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, possimus iste, velit eos reprehenderit dignissimos officiis laborum ullam adipisci suscipit, impedit in illum magni odio sapiente rerum animi! Ducimus, numquam?</p>
+                </div>
+            </div>
+        </section>
+        <section class="container2">
+            <div class="leftContent">
+                <div class="title">
+                    <h1>HALO BAGIAN KEDUA</h1>
+                </div>
+                <div class="cardContent">
+                    <div class="card">
+                        <p>Halo Semuanya</p>
+                    </div>
+                    <div class="card">
+                        <p>Halo Semuanya</p>
+                    </div>
+                    <div class="card">
+                        <p>Halo Semuanya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

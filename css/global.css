@@ -233,7 +233,6 @@ footer .rightContent .linkFooter2 span{
 
 
     header {
-        margin-top: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -276,5 +275,88 @@ footer .rightContent .linkFooter2 span{
 
     header #navbarMenu.active {
         display: flex;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .leftContent{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 30px;
+        
+    }
+
+    footer .leftContent .footerLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    footer .leftContent .sosmedIcon2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .leftContent .footerText{
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        width: 400px;
+    }
+
+    footer .leftContent .moreButton{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .rightContent{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        padding: 5px 5px 30px 5px;
+    }
+
+    footer .rightContent .linkFooter1 h3{
+        font-size: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    footer .rightContent .linkFooter1 ul li a{
+        font-size: 18px;
+    }
+
+    footer .rightContent .linkFooter2 h3{
+        font-size: 20px;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+    }
+
+    footer .rightContent .linkFooter2 ul{
+        margin-bottom: 20px;
+    }
+
+    footer .rightContent .linkFooter2 ul li a{
+        font-size: 18px;
+    }
+
+    footer .rightContent .linkFooter2 span{
+        font-size: 10px;
+        
     }
 }
