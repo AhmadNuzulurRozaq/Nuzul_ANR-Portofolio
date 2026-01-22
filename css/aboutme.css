@@ -1,7 +1,8 @@
 main {
-    height: 150vh;
+    height: auto;
     color: white;
     margin-top: 100px;
+    overflow-x: hidden;
 }
 
 main .myProfile {
@@ -10,8 +11,6 @@ main .myProfile {
     justify-content: center;
     align-items: center;
 }
-
-
 
 main .myProfile .containerTitle1 {
     width: 100%;
@@ -26,13 +25,8 @@ main .myProfile .containerTitle1 .profileSquare {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    transition: 0.1s;
 }
 
-main .myProfile .containerTitle1 .profileSquare:hover{
-    transform: scale(1.1);
-    box-shadow: 1px 1px 10px rgb(255, 255, 255);
-}
 
 main .myProfile .containerTitle1 .profileSquare .personalIdentity table tr td ul {
     list-style-type: square;
@@ -55,40 +49,38 @@ main .mySkills .skillsSquare {
     background-color: #001a3b;
     padding: 40px;
     border-radius: 10px;
-    transition: 0.1s;
 }
 
-main .mySkills .skillsSquare:hover{
-    transform: scale(1.1);
-    box-shadow: 1px 1px 10px rgb(255, 255, 255);
-}
 
-main .mySkills .containerTitle2{
+
+main .mySkills .containerTitle2 {
     width: 100%;
     max-width: 1000px;
 }
 
-main .mySkills .containerTitle2 .skillsSquare .logo {
+main .mySkills .containerTitle2 .skillsSquare {
     display: flex;
     gap: 100px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+
 }
 
-main .mySkills .containerTitle2 .skillsSquare .logo .logoCard{
+main .mySkills .containerTitle2 .skillsSquare .logoCard {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-main .mySkills .containerTitle2 .skillsSquare .logo .logoCard img {
+main .mySkills .containerTitle2 .skillsSquare .logoCard img {
     width: 80px;
     height: auto;
     margin-bottom: 20px;
 }
 
-main .mySkills .containerTitle2 .skillsSquare .logo .logoCard span {
+main .mySkills .containerTitle2 .skillsSquare .logoCard span {
     font-size: 16px;
     font-weight: bold;
 }
@@ -111,10 +103,103 @@ main .myDescription .descriptionSquare {
     background-color: #001a3b;
     padding: 40px;
     border-radius: 10px;
-    transition: 0.1s;
 }
 
-main .myDescription .descriptionSquare:hover{
-    transform: scale(1.1);
-    box-shadow: 1px 1px 10px rgb(255, 255, 255);
+@media (max-width: 768px) {
+
+    main .myProfile .containerTitle1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    main .myProfile .containerTitle1 .profileTitle {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    main .myProfile .containerTitle1 .profileSquare {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    main .myProfile .containerTitle1 .profileSquare .personalIdentity {
+        font-size: 14px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main .mySkills{
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    main .mySkills .containerTitle2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main .mySkills .containerTitle2 .skillsSquare {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    main .mySkills .containerTitle2 .skillsSquare .logoCard {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .mySkills .containerTitle2 .skillsSquare .logoCard img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    main .mySkills .containerTitle2 .skillsSquare .logoCard span {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    main .myDescription {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    main .myDescription .containerTitle3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    main .myDescription .descriptionSquare {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
 }

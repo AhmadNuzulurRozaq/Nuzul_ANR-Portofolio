@@ -50,6 +50,8 @@ header #humbergerMenu span {
     height: 3px;
     background-color: white;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
 }
 
 header #navbarMenu {
@@ -145,7 +147,7 @@ footer .leftContent .sosmedIcon2 img {
     transition: 0.1s;
 }
 
-footer .leftContent .sosmedIcon2 img:hover{
+footer .leftContent .sosmedIcon2 img:hover {
     transform: scale(1.3);
 }
 
@@ -173,7 +175,7 @@ footer .leftContent .moreButton:hover a {
     color: black;
 }
 
-footer .rightContent{
+footer .rightContent {
     display: flex;
     gap: 90px;
 }
@@ -225,7 +227,7 @@ footer .rightContent .linkFooter2 ul li a:hover {
     text-decoration: underline;
 }
 
-footer .rightContent .linkFooter2 span{
+footer .rightContent .linkFooter2 span {
     color: #656565;
 }
 
@@ -257,27 +259,58 @@ footer .rightContent .linkFooter2 span{
     }
 
     header #navbarMenu {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top: 60px;
         justify-content: flex-start;
         background-color: #000a17;
-        margin-left: 20px;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        pointer-events: none;
+        z-index: -1;
+        transition: all 0.4s ease-in-out;
     }
 
     header #navbarMenu ul {
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 30px;
         justify-content: center;
+        padding: 0;
+    }
+
+    header #navbarMenu a img {
+        width: 35px;
+        margin-bottom: 20px;
     }
 
     header #navbarMenu.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+        z-index: 998;
     }
 
-    footer{
+    header #humbergerMenu.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    header #humbergerMenu.active span:nth-child(2) {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    header #humbergerMenu.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    footer {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -286,43 +319,43 @@ footer .rightContent .linkFooter2 span{
         align-items: center;
     }
 
-    footer .leftContent{
+    footer .leftContent {
         margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 30px;
         gap: 30px;
-        
+
     }
 
-    footer .leftContent .footerLogo{
+    footer .leftContent .footerLogo {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
     }
 
-    footer .leftContent .sosmedIcon2{
+    footer .leftContent .sosmedIcon2 {
         margin: 0;
         display: flex;
         justify-content: center;
     }
 
-    footer .leftContent .footerText{
+    footer .leftContent .footerText {
         margin: 0;
         text-align: center;
         font-size: 15px;
         width: 400px;
     }
 
-    footer .leftContent .moreButton{
+    footer .leftContent .moreButton {
         margin: 0;
         display: flex;
         justify-content: center;
     }
 
-    footer .rightContent{
+    footer .rightContent {
         display: flex;
         margin: 0;
         flex-direction: column;
@@ -331,32 +364,32 @@ footer .rightContent .linkFooter2 span{
         padding: 5px 5px 30px 5px;
     }
 
-    footer .rightContent .linkFooter1 h3{
+    footer .rightContent .linkFooter1 h3 {
         font-size: 20px;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
     }
 
-    footer .rightContent .linkFooter1 ul li a{
+    footer .rightContent .linkFooter1 ul li a {
         font-size: 18px;
     }
 
-    footer .rightContent .linkFooter2 h3{
+    footer .rightContent .linkFooter2 h3 {
         font-size: 20px;
         border-bottom: 1px solid white;
         padding-bottom: 10px;
     }
 
-    footer .rightContent .linkFooter2 ul{
+    footer .rightContent .linkFooter2 ul {
         margin-bottom: 20px;
     }
 
-    footer .rightContent .linkFooter2 ul li a{
+    footer .rightContent .linkFooter2 ul li a {
         font-size: 18px;
     }
 
-    footer .rightContent .linkFooter2 span{
+    footer .rightContent .linkFooter2 span {
         font-size: 10px;
-        
+
     }
 }
